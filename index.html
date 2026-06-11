@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login com Cookies</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="cherries-background">
+    <div class="cherry">🍒</div>
+    <div class="cherry">🍒</div>
+    <div class="cherry">🍒</div>
+    <div class="cherry">🍒</div>
+    <div class="cherry">🍒</div>
+    <div class="cherry">🍒</div>
+    <div class="cherry">🍒</div>
+    <div class="cherry">🍒</div>
+    <div class="cherry">🍒</div>
+    <div class="cherry">🍒</div>
+    <div class="cherry">🍒</div>
+    <div class="cherry">🍒</div>
+    <div class="cherry">🍒</div>
+    <div class="cherry">🍒</div>
+    <div class="cherry">🍒</div>
+    <div class="cherry">🍒</div>
+    <div class="cherry">🍒</div>
+    <div class="cherry">🍒</div>
+    <div class="cherry">🍒</div>
+    <div class="cherry">🍒</div>
+    <div class="cherry">🍒</div>
+    <div class="cherry">🍒</div>
+    <div class="cherry">🍒</div>
+    <div class="cherry">🍒</div>
+    <div class="cherry">🍒</div>
+    <div class="cherry">🍒</div>
+    <div class="cherry">🍒</div>
+    <div class="cherry">🍒</div>
+    <div class="cherry">🍒</div>
+    <div class="cherry">🍒</div>
+    <div class="cherry">🍒</div>
+    <div class="cherry">🍒</div>
+    <div class="cherry">🍒</div>
+    <div class="cherry">🍒</div>
+    <div class="cherry">🍒</div>
+  </div>
+
+  <main class="container">
+    <div class="top-bar">
+      <div class="theme-switcher">
+        <span>Modo:</span>
+        <button id="theme-toggle" type="button" aria-label="Alternar tema">🌙</button>
+      </div>
+    </div>
+
+    <section class="card" id="login-card">
+      <h1>Login</h1>
+      <form id="login-form">
+        <label for="username">Usuário</label>
+        <input type="text" id="username" name="username" autocomplete="username" required />
+
+        <label for="password">Senha</label>
+        <div class="password-container">
+          <input type="password" id="password" name="password" autocomplete="current-password" required />
+          <button type="button" id="toggle-password" class="toggle-password" aria-label="Mostrar/ocultar senha">👁️</button>
+        </div>
+
+        <div class="checkbox-row">
+          <input type="checkbox" id="remember" />
+          <label for="remember">Lembrar meu login</label>
+        </div>
+
+        <button type="submit">Entrar</button>
+        <p class="message" id="message"></p>
+      </form>
+    </section>
+
+    <section class="card hidden" id="welcome-card">
+      <h1>Bem-vindo</h1>
+      <p id="welcome-text"></p>
+      <button id="logout-btn">Sair</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
